@@ -2,7 +2,9 @@ import React from 'react'
 import style from './Formulario.module.css'
 import useSelect from './hooks/useSelect'
 
-const Formulario = () => {
+const Formulario = ({guardarCategoria}) => {
+
+    const apiKey = '896d6ab30f7b4cd9961783c820c7f638'
 
     const OPCIONES =[
         {value:'general', label:'General'},
@@ -15,10 +17,17 @@ const Formulario = () => {
     ]
     const [categoria, Seleccionar] = useSelect('general', OPCIONES)
 
+    const actualizarCategoria = e => {
+        e.preventDefault()
+        guardarCategoria(categoria)
+    }
+
     return (
         <div className={`${style.buscador} row`}>
             <div className='col s12 m8 offset-m2'>
-                <form>
+                <form
+                    onSubmit={actualizarCategoria}
+                >
                     <h2 className={style.heading}>Encuentra noticias por categoria</h2>
                     <div className='input-field col s12'>
                         <Seleccionar/>
