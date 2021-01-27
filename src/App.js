@@ -12,6 +12,7 @@ function App() {
 
   const [categoria, guardarCategoria] = useState('Seleccione una categoria')
   const [noticias, guardarNoticias] = useState([])
+  //prueba para hacer merge
 
   useEffect(() => {
     const consultarNoticias = async () =>{
