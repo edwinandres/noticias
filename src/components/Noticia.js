@@ -13,6 +13,8 @@ const Noticia = ({noticia}) => {
         </div>
         :null
 
+        //hola
+
     return (
         <div className='col s12 m6 l4'>
             <div className='card'>
