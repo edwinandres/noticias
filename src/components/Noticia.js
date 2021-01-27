@@ -14,6 +14,8 @@ const Noticia = ({noticia}) => {
         :null
 
         //hola
+        ///ENSAYO DE MERGE 
+        //PRUEBA
 
     return (
         <div className='col s12 m6 l4'>
