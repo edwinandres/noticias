@@ -8,6 +8,7 @@ import ListadoNoticias from './components/ListadoNoticias'
 function App() {
 
   //combinando cositas con mi otra rama
+  //prueba
 
   const [categoria, guardarCategoria] = useState('Seleccione una categoria')
   const [noticias, guardarNoticias] = useState([])
