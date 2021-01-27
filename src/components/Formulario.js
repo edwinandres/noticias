@@ -1,10 +1,11 @@
 import React from 'react'
 import style from './Formulario.module.css'
 import useSelect from './hooks/useSelect'
+import PropTypes from 'prop-types'
 
 const Formulario = ({guardarCategoria}) => {
 
-    const apiKey = '896d6ab30f7b4cd9961783c820c7f638'
+    
 
     const OPCIONES =[
         {value:'general', label:'General'},
@@ -44,6 +45,10 @@ const Formulario = ({guardarCategoria}) => {
             
         </div>
     )
+}
+
+Formulario.propTypes = {
+    guardarCategoria: PropTypes.func.isRequired
 }
 
 export default Formulario
